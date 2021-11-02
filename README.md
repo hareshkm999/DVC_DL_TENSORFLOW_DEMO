@@ -26,5 +26,11 @@ mkdir -p config src/utils
 touch config/config.yaml config/secrets.yaml src/__init__.py src/utils/__init__.py src/stage_01_load_save.py
 
 ```
+### freezing requirements
+```bash
+
+pip freeze > requirements.txt
+
+```
 
 
