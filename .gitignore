@@ -9,3 +9,5 @@ venv.bak/
 ./env
 # ignore secrets file
 config/secrets.yaml
+
+/data

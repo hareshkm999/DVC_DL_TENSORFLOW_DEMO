@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: src
+Version: 0.0.1
+Summary: A small package for dvc DL pipeline demo
+Home-page: https://github.com/hareshkm999/DVC_DL_TENSORFLOW_DEMO
+Author: hareshkm999
+Author-email: hareshkm999@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# DVC DL DEMO
+
+download data --> [source](https://drive.google.com/drive/u/0/folders/1tz4IOoJKdi999IRdqJY04VOifyllRzj1)
+
+## commands
+
+### create new env
+```bash
+conda create --prefix python=3.7 -y
+
+```
+
+### activate new env
+```bash
+source activate ./env
+```
+
+### init DVC git
+```bash
+git init
+dvc init
+```
+### create empty files and direcories
+```bash
+touch dvc.yaml setup.py params.yaml setup.py README.md .gitignore
+
+mkdir -p config src/utils
+touch config/config.yaml config/secrets.yaml src/__init__.py src/utils/__init__.py src/stage_01_load_save.py
+
+```
+### freezing requirements
+```bash
+
+pip freeze > requirements.txt
+
+```
+
+
+
+
