@@ -7,3 +7,38 @@
 [2021-11-02 20:09:39,462: INFO: all_utils]: directory is created at data/cat
 [2021-11-02 20:09:39,736: INFO: stage_01_load_save]: stage one completed! all the data are saved in local >>>>>
 
+[2021-11-03 09:50:52,620: INFO: stage_02_prepare_base_model]: >>>>> stage two started
+[2021-11-03 09:50:52,626: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-11-03 09:50:52,627: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-11-03 09:50:52,628: INFO: stage_02_prepare_base_model]: stage two completed! base model is created >>>>>
+
+[2021-11-03 09:56:21,475: INFO: stage_02_prepare_base_model]: >>>>> stage two started
+[2021-11-03 09:56:21,478: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-11-03 09:56:21,478: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-11-03 09:56:21,479: INFO: stage_02_prepare_base_model]: stage two completed! base model is created >>>>>
+
+[2021-11-03 09:59:28,445: INFO: stage_02_prepare_base_model]: >>>>> stage two started
+[2021-11-03 09:59:28,448: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-11-03 09:59:28,449: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-11-03 09:59:28,449: INFO: all_utils]: directory is created at a
+[2021-11-03 09:59:28,450: INFO: all_utils]: directory is created at r
+[2021-11-03 09:59:28,451: INFO: all_utils]: directory is created at t
+[2021-11-03 09:59:28,451: INFO: all_utils]: directory is created at i
+[2021-11-03 09:59:28,451: INFO: all_utils]: directory is created at f
+[2021-11-03 09:59:28,452: INFO: all_utils]: directory is created at a
+[2021-11-03 09:59:28,453: INFO: all_utils]: directory is created at c
+[2021-11-03 09:59:28,453: INFO: all_utils]: directory is created at t
+[2021-11-03 09:59:28,454: INFO: all_utils]: directory is created at s
+[2021-11-03 09:59:28,454: INFO: all_utils]: directory is created at \
+[2021-11-03 09:59:28,454: INFO: all_utils]: directory is created at b
+[2021-11-03 09:59:28,455: INFO: all_utils]: directory is created at a
+[2021-11-03 09:59:28,455: INFO: all_utils]: directory is created at s
+[2021-11-03 09:59:28,456: INFO: all_utils]: directory is created at e
+[2021-11-03 09:59:28,456: INFO: all_utils]: directory is created at _
+[2021-11-03 09:59:28,457: INFO: all_utils]: directory is created at m
+[2021-11-03 09:59:28,457: INFO: all_utils]: directory is created at o
+[2021-11-03 09:59:28,458: INFO: all_utils]: directory is created at d
+[2021-11-03 09:59:28,458: INFO: all_utils]: directory is created at e
+[2021-11-03 09:59:28,458: INFO: all_utils]: directory is created at l
+[2021-11-03 09:59:28,459: INFO: stage_02_prepare_base_model]: stage two completed! base model is created >>>>>
+
