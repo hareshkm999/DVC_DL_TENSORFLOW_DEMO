@@ -199,3 +199,6 @@ _________________________________________________________________
 
 [2021-11-05 07:58:48,533: INFO: stage_02_prepare_base_model]: stage two completed! base model is created >>>>>
 
+[2021-11-05 08:58:45,744: INFO: stage_03_prepare_callbacks]: >>>>> stage three started
+[2021-11-05 08:58:45,744: INFO: stage_03_prepare_callbacks]: stage three completed! callbacks are prepared and binaries created >>>>>
+
