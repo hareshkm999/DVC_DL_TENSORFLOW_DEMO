@@ -42,3 +42,99 @@
 [2021-11-03 09:59:28,458: INFO: all_utils]: directory is created at l
 [2021-11-03 09:59:28,459: INFO: stage_02_prepare_base_model]: stage two completed! base model is created >>>>>
 
+[2021-11-03 12:51:14,924: INFO: stage_02_prepare_base_model]: >>>>> stage two started
+[2021-11-03 12:51:14,926: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-11-03 12:51:14,928: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-11-03 12:51:14,928: INFO: all_utils]: directory is created at a
+[2021-11-03 12:51:14,929: INFO: all_utils]: directory is created at r
+[2021-11-03 12:51:14,929: INFO: all_utils]: directory is created at t
+[2021-11-03 12:51:14,929: INFO: all_utils]: directory is created at i
+[2021-11-03 12:51:14,930: INFO: all_utils]: directory is created at f
+[2021-11-03 12:51:14,930: INFO: all_utils]: directory is created at a
+[2021-11-03 12:51:14,931: INFO: all_utils]: directory is created at c
+[2021-11-03 12:51:14,931: INFO: all_utils]: directory is created at t
+[2021-11-03 12:51:14,932: INFO: all_utils]: directory is created at s
+[2021-11-03 12:51:14,932: INFO: all_utils]: directory is created at \
+[2021-11-03 12:51:14,932: INFO: all_utils]: directory is created at b
+[2021-11-03 12:51:14,933: INFO: all_utils]: directory is created at a
+[2021-11-03 12:51:14,933: INFO: all_utils]: directory is created at s
+[2021-11-03 12:51:14,934: INFO: all_utils]: directory is created at e
+[2021-11-03 12:51:14,934: INFO: all_utils]: directory is created at _
+[2021-11-03 12:51:14,935: INFO: all_utils]: directory is created at m
+[2021-11-03 12:51:14,935: INFO: all_utils]: directory is created at o
+[2021-11-03 12:51:14,936: INFO: all_utils]: directory is created at d
+[2021-11-03 12:51:14,936: INFO: all_utils]: directory is created at e
+[2021-11-03 12:51:14,937: INFO: all_utils]: directory is created at l
+[2021-11-03 12:52:08,471: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-03 12:52:08,794: INFO: models]: VGG16 base model saved at artifacts\base_model\VGG16_base_model.h5
+[2021-11-03 12:52:08,872: INFO: models]: custom model is compiled and ready to be trained
+[2021-11-03 12:52:08,919: ERROR: stage_02_prepare_base_model]: name 'io' is not defined
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 71, in <module>
+    prepare_base_model(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 55, in prepare_base_model
+    logging.info(f"full model summary: \n{_log_model_summary(full_model)}")
+  File "src/stage_02_prepare_base_model.py", line 50, in _log_model_summary
+    with io.StringIO() as stream:
+NameError: name 'io' is not defined
+[2021-11-03 12:54:15,743: INFO: stage_02_prepare_base_model]: >>>>> stage two started
+[2021-11-03 12:54:15,745: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-11-03 12:54:15,747: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-11-03 12:54:15,747: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-03 12:54:16,696: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-03 12:54:16,963: INFO: models]: VGG16 base model saved at artifacts\base_model\VGG16_base_model.h5
+[2021-11-03 12:54:16,991: INFO: models]: custom model is compiled and ready to be trained
+[2021-11-03 12:54:17,019: INFO: stage_02_prepare_base_model]: full model summary: 
+Model: "model"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 224, 224, 3)]     0         
+_________________________________________________________________
+block1_conv1 (Conv2D)        (None, 224, 224, 64)      1792      
+_________________________________________________________________
+block1_conv2 (Conv2D)        (None, 224, 224, 64)      36928     
+_________________________________________________________________
+block1_pool (MaxPooling2D)   (None, 112, 112, 64)      0         
+_________________________________________________________________
+block2_conv1 (Conv2D)        (None, 112, 112, 128)     73856     
+_________________________________________________________________
+block2_conv2 (Conv2D)        (None, 112, 112, 128)     147584    
+_________________________________________________________________
+block2_pool (MaxPooling2D)   (None, 56, 56, 128)       0         
+_________________________________________________________________
+block3_conv1 (Conv2D)        (None, 56, 56, 256)       295168    
+_________________________________________________________________
+block3_conv2 (Conv2D)        (None, 56, 56, 256)       590080    
+_________________________________________________________________
+block3_conv3 (Conv2D)        (None, 56, 56, 256)       590080    
+_________________________________________________________________
+block3_pool (MaxPooling2D)   (None, 28, 28, 256)       0         
+_________________________________________________________________
+block4_conv1 (Conv2D)        (None, 28, 28, 512)       1180160   
+_________________________________________________________________
+block4_conv2 (Conv2D)        (None, 28, 28, 512)       2359808   
+_________________________________________________________________
+block4_conv3 (Conv2D)        (None, 28, 28, 512)       2359808   
+_________________________________________________________________
+block4_pool (MaxPooling2D)   (None, 14, 14, 512)       0         
+_________________________________________________________________
+block5_conv1 (Conv2D)        (None, 14, 14, 512)       2359808   
+_________________________________________________________________
+block5_conv2 (Conv2D)        (None, 14, 14, 512)       2359808   
+_________________________________________________________________
+block5_conv3 (Conv2D)        (None, 14, 14, 512)       2359808   
+_________________________________________________________________
+block5_pool (MaxPooling2D)   (None, 7, 7, 512)         0         
+_________________________________________________________________
+flatten (Flatten)            (None, 25088)             0         
+_________________________________________________________________
+dense (Dense)                (None, 2)                 50178     
+=================================================================
+Total params: 14,764,866
+Trainable params: 50,178
+Non-trainable params: 14,714,688
+_________________________________________________________________
+
+[2021-11-03 12:54:17,144: INFO: stage_02_prepare_base_model]: stage two completed! base model is created >>>>>
+
